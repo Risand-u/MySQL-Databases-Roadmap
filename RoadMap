@@ -1,1 +1,247 @@
+## 🟢 Stage 1 — Foundations
 
+### What is a Database?
+- [ ] Understand: database vs DBMS vs SQL
+- [ ] Understand: relational vs non-relational
+- [ ] Install MySQL + MySQL Workbench
+- [ ] Run: SHOW DATABASES, CREATE DATABASE, USE
+
+### Tables & Data Types
+- [ ] Learn core types: INT, VARCHAR, TEXT, DATE, BOOLEAN, DECIMAL
+- [ ] Understand NULL vs empty string
+- [ ] Practice: CREATE TABLE students
+
+### INSERT & SELECT
+- [ ] Practice: INSERT INTO ... VALUES
+- [ ] Practice: SELECT * and SELECT specific columns
+
+### UPDATE & DELETE
+- [ ] Practice: UPDATE ... SET ... WHERE
+- [ ] Practice: DELETE FROM ... WHERE
+- [ ] Understand danger of missing WHERE clause
+
+### Filtering with WHERE
+- [ ] Practice: =, >, <, !=
+- [ ] Practice: BETWEEN, LIKE, IN
+
+### Sorting & Limiting
+- [ ] Practice: ORDER BY ASC/DESC
+- [ ] Practice: LIMIT
+
+### Aggregate Functions
+- [ ] Practice: COUNT(), AVG(), MAX(), MIN(), SUM()
+
+### GROUP BY & HAVING
+- [ ] Practice: GROUP BY
+- [ ] Practice: HAVING (filter after grouping)
+- [ ] Understand difference: WHERE vs HAVING
+
+### Stage 1 Project: Library Book Tracker
+- [ ] Create table: books (id, title, author, genre, year_published, available)
+- [ ] Insert 10 books
+- [ ] Query: all available books
+- [ ] Query: books by genre
+- [ ] Query: newest 5 books
+- [ ] Push: stage-1-basics/library-tracker.sql
+- [ ] Write stage-1-basics/README.md and push
+
+---
+
+## 🔵 Stage 2 — Intermediate Queries
+
+### Primary Keys & Foreign Keys
+- [ ] Understand PRIMARY KEY and AUTO_INCREMENT
+- [ ] Understand FOREIGN KEY and relationships
+- [ ] Practice creating two related tables
+
+### INNER JOIN
+- [ ] Understand what a JOIN does
+- [ ] Practice: INNER JOIN ... ON
+
+### LEFT JOIN & RIGHT JOIN
+- [ ] Practice: LEFT JOIN (keep all left rows)
+- [ ] Practice: RIGHT JOIN
+- [ ] Understand NULL rows in results
+
+### Multiple JOINs
+- [ ] Practice joining 3 tables
+- [ ] Use table aliases (s, c, g)
+
+### Subqueries
+- [ ] Practice subquery in WHERE clause
+- [ ] Practice subquery with IN
+
+### String Functions
+- [ ] Practice: UPPER(), LOWER(), CONCAT()
+- [ ] Practice: LENGTH(), SUBSTRING()
+
+### Date & Time Functions
+- [ ] Practice: NOW(), CURDATE(), YEAR(), MONTH()
+- [ ] Practice: DATEDIFF()
+
+### CASE Statements
+- [ ] Practice: CASE WHEN ... THEN ... ELSE ... END
+- [ ] Build an age group classifier
+
+### DISTINCT & NULL Handling
+- [ ] Practice: SELECT DISTINCT
+- [ ] Practice: IS NULL, IS NOT NULL
+- [ ] Practice: COALESCE()
+
+### Views
+- [ ] Understand what a view is
+- [ ] Practice: CREATE VIEW ... AS SELECT ...
+- [ ] Query a view like a table
+
+### Stage 2 Project: Student Enrollment System
+- [ ] Create tables: students, courses, enrollments, grades
+- [ ] Query: top 5 students by GPA
+- [ ] Query: courses with most enrollments
+- [ ] Query: students with no grades yet
+- [ ] Create 2 views
+- [ ] Push project + write stage-2-queries/README.md
+
+---
+
+## 🟡 Stage 3 — Database Design
+
+### Normalization: 1NF
+- [ ] Understand atomic values
+- [ ] Identify and fix a bad table design
+
+### Normalization: 2NF & 3NF
+- [ ] Understand partial dependencies (2NF)
+- [ ] Understand transitive dependencies (3NF)
+- [ ] Refactor a table to 3NF
+
+### Entity Relationship Diagrams (ERDs)
+- [ ] Learn: entities, attributes, relationships
+- [ ] Learn: One-to-One, One-to-Many, Many-to-Many
+- [ ] Draw ERD for Library Tracker
+- [ ] Draw ERD for Enrollment System
+
+### Indexes
+- [ ] Understand why indexes speed up queries
+- [ ] Practice: CREATE INDEX, SHOW INDEXES, DROP INDEX
+- [ ] Run EXPLAIN before and after adding index
+
+### Constraints
+- [ ] Practice: NOT NULL, UNIQUE, CHECK, DEFAULT
+- [ ] Build a products table using all constraints
+
+### Transactions
+- [ ] Understand what a transaction is
+- [ ] Practice: START TRANSACTION, COMMIT, ROLLBACK
+- [ ] Build a bank transfer example
+
+### ACID Properties
+- [ ] Learn: Atomicity, Consistency, Isolation, Durability
+- [ ] Map each property to a real-world scenario
+
+### Stored Procedures
+- [ ] Understand what a stored procedure is
+- [ ] Practice: CREATE PROCEDURE ... BEGIN ... END
+- [ ] Call a procedure with CALL
+
+### Stage 3 Project: E-commerce Database
+- [ ] Draw ERD first (before writing SQL)
+- [ ] Create tables: users, products, orders, order_items, categories
+- [ ] Apply 1NF, 2NF, 3NF
+- [ ] Add indexes on frequently queried columns
+- [ ] Use transaction for order placement
+- [ ] Push project + write stage-3-design/README.md
+
+---
+
+## 🟠 Stage 4 — Advanced MySQL
+
+### EXPLAIN & Query Optimization
+- [ ] Run EXPLAIN on a slow-looking query
+- [ ] Identify type=ALL (full scan) as a red flag
+- [ ] Add an index to improve it
+
+### Triggers
+- [ ] Understand BEFORE vs AFTER triggers
+- [ ] Create an audit log table
+- [ ] Build a trigger that logs every DELETE
+
+### User Management & Security
+- [ ] Practice: CREATE USER, GRANT, REVOKE
+- [ ] Create a read-only user and a read-write user
+- [ ] Understand SQL injection concept
+
+### Backup & Restore
+- [ ] Backup a database with mysqldump
+- [ ] Restore it into a new database
+
+### Window Functions
+- [ ] Understand: RANK(), ROW_NUMBER(), DENSE_RANK()
+- [ ] Practice: OVER (PARTITION BY ... ORDER BY ...)
+
+### CTEs (Common Table Expressions)
+- [ ] Understand WITH ... AS (...)
+- [ ] Rewrite a subquery as a CTE
+
+### JSON in MySQL
+- [ ] Create a table with a JSON column
+- [ ] Insert and query JSON data
+- [ ] Use ->>'$.key' syntax
+
+### Stage 4 Project: Hospital Management System
+- [ ] Create tables: patients, doctors, appointments, prescriptions, billing
+- [ ] Add triggers for audit logging
+- [ ] Build stored procedures for common operations
+- [ ] Use window functions for doctor performance report
+- [ ] Create restricted users (doctor role vs admin role)
+- [ ] Push project + write stage-4-advanced/README.md
+
+---
+
+## 🔴 Stage 5 — Real-World Projects
+
+### MySQL + Python
+- [ ] Install mysql-connector-python
+- [ ] Connect Python to MySQL
+- [ ] Run SELECT, INSERT, DELETE from Python script
+- [ ] Build a simple CLI CRUD app
+- [ ] Push to stage-5-projects/python-connector/
+
+### REST API with MySQL
+- [ ] Set up Flask (Python) or Express (Node.js)
+- [ ] Build endpoint: GET /students
+- [ ] Build endpoint: POST /students
+- [ ] Build endpoint: DELETE /students/:id
+- [ ] Use parameterized queries (prevent SQL injection)
+- [ ] Push to stage-5-projects/rest-api/
+
+### Data Analysis
+- [ ] Download a real dataset (e.g. from Kaggle)
+- [ ] Import it into MySQL
+- [ ] Write 10+ analytical queries
+- [ ] Use CTEs, window functions, GROUP BY
+- [ ] Export results to CSV
+- [ ] Push to stage-5-projects/data-analysis/
+
+### Capstone: Full App Database
+- [ ] Choose an app idea
+- [ ] Draw full ERD
+- [ ] Build normalized schema
+- [ ] Add stored procedures + triggers
+- [ ] Create user roles
+- [ ] Document backup strategy in README
+- [ ] Push everything with final README.md
+- [ ] Share your GitHub link!
+
+---
+
+## Progress Overview
+
+| Stage | Topic | Done? |
+|---|---|---|
+| 🟢 1 | Foundations | [ ] |
+| 🔵 2 | Intermediate Queries | [ ] |
+| 🟡 3 | Database Design | [ ] |
+| 🟠 4 | Advanced MySQL | [ ] |
+| 🔴 5 | Real-World Projects | [ ] |
+
+> Every - [ ] becomes - [x] when done. Go at your own pace. You've got this. 🚀
