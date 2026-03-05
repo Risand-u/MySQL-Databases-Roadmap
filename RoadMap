@@ -4,7 +4,7 @@
 - [✅] Understand: database vs DBMS vs SQL
 - [✅] Understand: relational vs non-relational
 - [✅] Install MySQL + MySQL Workbench
-- [ ] Run: SHOW DATABASES, CREATE DATABASE, USE
+- [✅] Run: SHOW DATABASES, CREATE DATABASE, USE
 
 ### Tables & Data Types
 - [ ] Learn core types: INT, VARCHAR, TEXT, DATE, BOOLEAN, DECIMAL
