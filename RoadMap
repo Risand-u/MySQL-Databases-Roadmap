@@ -7,7 +7,7 @@
 - [✅] Run: SHOW DATABASES, CREATE DATABASE, USE
 
 ### Tables & Data Types
-- [ ] Learn core types: INT, VARCHAR, TEXT, DATE, BOOLEAN, DECIMAL
+- [✅] Learn core types: INT, VARCHAR, TEXT, DATE, BOOLEAN, DECIMAL
 - [ ] Understand NULL vs empty string
 - [ ] Practice: CREATE TABLE students
 
