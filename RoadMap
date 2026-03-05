@@ -8,7 +8,7 @@
 
 ### Tables & Data Types
 - [✅] Learn core types: INT, VARCHAR, TEXT, DATE, BOOLEAN, DECIMAL
-- [ ] Understand NULL vs empty string
+- [✅] Understand NULL vs empty string
 - [ ] Practice: CREATE TABLE students
 
 ### INSERT & SELECT
