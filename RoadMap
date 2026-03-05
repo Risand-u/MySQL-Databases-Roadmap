@@ -1,7 +1,7 @@
 ## 🟢 Stage 1 — Foundations
 
 ### What is a Database?
-- [ ] Understand: database vs DBMS vs SQL
+- [✅] Understand: database vs DBMS vs SQL
 - [ ] Understand: relational vs non-relational
 - [ ] Install MySQL + MySQL Workbench
 - [ ] Run: SHOW DATABASES, CREATE DATABASE, USE
